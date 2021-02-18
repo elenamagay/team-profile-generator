@@ -12,7 +12,7 @@ const renderTeam = (team) => {
                     <p class="card-text">
                         <ul class="list-group">
                             <li class="list-group-item">ID: ${teamMember.getId()}</li>
-                            <li class="list-group-item">Email: ${teamMember.getEmail()}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${teamMember.getEmail()}">${teamMember.getEmail()}</a></li>
                             <li class="list-group-item">Office number: ${teamMember.getOfficeNumber()}</li>
                         </ul>
                     </p>              
@@ -31,8 +31,8 @@ const renderTeam = (team) => {
                     <p class="card-text">
                         <ul class="list-group">
                             <li class="list-group-item">ID: ${teamMember.getId()}</li>
-                            <li class="list-group-item">Email: ${teamMember.getEmail()}</li>
-                            <li class="list-group-item">GitHub: ${teamMember.getGithub()}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${teamMember.getEmail()}">${teamMember.getEmail()}</a></li>
+                            <li class="list-group-item">GitHub: <a href="https://github.com/${teamMember.getGithub()}">${teamMember.getGithub()}</a></li>
                         </ul>
                     </p>              
                 </div>
@@ -50,7 +50,7 @@ const renderTeam = (team) => {
                     <p class="card-text">
                         <ul class="list-group">
                             <li class="list-group-item">ID: ${teamMember.getId()}</li>
-                            <li class="list-group-item">Email: ${teamMember.getEmail()}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${teamMember.getEmail()}">${teamMember.getEmail()}</a></li>
                             <li class="list-group-item">School: ${teamMember.getSchool()}</li>
                         </ul>
                     </p>              
